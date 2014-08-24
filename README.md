@@ -16,6 +16,8 @@ npm install codemirror-typewriter-scrolling
 
 ### `typewriterScrolling` option
 
+You can set `typewriterScrolling` to option.
+
 ``` js
 var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
     lineNumbers: true,
@@ -27,6 +29,8 @@ editor.setValue((new Array(100)).join("\n"));
 ```
 
 ### `scrollSelectionToCenter` command
+
+You can use `scrollSelectionToCenter` command.
 
 ``` js
 editor.execCommand("scrollSelectionToCenter");
