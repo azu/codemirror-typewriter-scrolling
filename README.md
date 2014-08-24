@@ -2,6 +2,8 @@
 
 CodeMirror addon adding typwritter-scrolling feature
 
+![gif](http://gyazo.com/a529c6a25caf013775df4309310a2e7f.gif)
+
 ## Installation
 
 ```
