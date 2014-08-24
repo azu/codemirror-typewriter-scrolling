@@ -1,6 +1,8 @@
 # codemirror-typewriter-scrolling
 
-CodeMirror addon adding typwritter-scrolling feature
+CodeMirror addon adding typwritter scrolling feature
+
+- **Typewriter Scrolling** keeps the view centered on the editor.
 
 ![gif](http://gyazo.com/a529c6a25caf013775df4309310a2e7f.gif)
 
@@ -12,6 +14,8 @@ npm install codemirror-typewriter-scrolling
 
 ## Usage
 
+### `typewriterScrolling` option
+
 ``` js
 var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
     lineNumbers: true,
@@ -22,9 +26,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
 editor.setValue((new Array(100)).join("\n"));
 ```
 
-or
-
-use `scrollSelectionToCenter` command.
+### `scrollSelectionToCenter` command
 
 ``` js
 editor.execCommand("scrollSelectionToCenter");
