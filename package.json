@@ -1,8 +1,11 @@
 {
   "name": "codemirror-typewriter-scrolling",
   "description": "codemirror addon : adding typwritter-scrolling feature",
-"keywords":["codemirror","addon"],
-  "version": "0.0.1",
+  "keywords": [
+    "codemirror",
+    "addon"
+  ],
+  "version": "0.1.0",
   "homepage": "https://github.com/azu/codemirror-typewriter-scrolling/",
   "repository": {
     "type": "git",
