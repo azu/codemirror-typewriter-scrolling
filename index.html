@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>codemirror-typewriter-scrolling</title>
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .CodeMirror {
+            min-height: 100%;
+            height: 100%;
+            background: white;
+        }
+
+        .wrap {
+            position: relative;
+            height: 100%;
+            background: #eee;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap"><textarea id="editor"></textarea></div>
+<script src="node_modules/codemirror/lib/codemirror.js"></script>
+<script src="node_modules/codemirror/mode/markdown/markdown.js"></script>
+<script src="typewriter-scrolling.js"></script>
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+        lineNumbers: true,
+        mode: "markdown",
+        typewriterScrolling: true
+    });
+    editor.setValue((new Array(100)).join("\n"));
+</script>
+</body>
+</html>
